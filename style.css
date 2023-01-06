@@ -25,7 +25,7 @@ h2 {
     margin-top: 50px;
     display: flex;
     justify-content: flex-start;
-    width: 1440px;
+    /* width: 1440px; */
 }
 
  footer {
@@ -75,6 +75,7 @@ button:hover {
 
     body {
         background-image: url(images/bg-mobile.svg);
+        width: 375px;
         
     }
 
@@ -91,32 +92,34 @@ button:hover {
 
     .container {
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        justify-content: center;
+        margin: 0;
         width: 375px;
-        align-items: center;
-        margin: 0px;
     }
 
     footer {
-        width: 375px;
+        width: 350px;
     }
 
     .introduction {
         text-align: center;
         margin: 0px;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
     }
 
     .introduction h2 {
         font-size: 20px;
-        width: 375px;
+        width: 350px;
         text-align: center;
         margin: 0px;
     }
 
     .introduction p {
         font-size: 16px;
-        width: 375px;
+        width: 350px;
         text-align: center;
         margin: 0px;
     }
