@@ -26,13 +26,16 @@ h2 {
     display: flex;
     justify-content: flex-start;
     width: 1440px;
-   
+}
+
+ footer {
+    width: 1440px;
 }
 
 .links-container {
     display: flex;
     justify-content: flex-end;
-    margin-right: 65px;
+    margin-right: 90px;
 }
 
 .introduction {
@@ -66,4 +69,73 @@ button:hover {
     background-color:hsl(300, 69%, 71%);
     color: white;
     border:none;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+    body {
+        background-image: url(images/bg-mobile.svg);
+        
+    }
+
+    .images img {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+
+    header img {
+        width: 200px;
+        margin-bottom: 50px;
+        height: 50px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 375px;
+        align-items: center;
+        margin: 0px;
+    }
+
+    footer {
+        width: 375px;
+    }
+
+    .introduction {
+        text-align: center;
+        margin: 0px;
+    }
+
+    .introduction h2 {
+        font-size: 20px;
+        width: 375px;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .introduction p {
+        font-size: 16px;
+        width: 375px;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .links-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+
+    }
+
+    .links a {
+        font-size: 25px;
+    }
+
+    button {
+    padding: 12px 70px;
+    margin-top: 20px;
+    }
+
 }
